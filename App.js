@@ -72,12 +72,10 @@ export default class App extends React.Component {
   addCube(){
     const geometry = new THREE.BoxGeometry(1.5, 1.5, 1.5);
     const material = new THREE.MeshBasicMaterial({ color: 0x000000 });
-    const cube = new THREE.Mesh(geometry, material);
+  
+    const cube = new THREE.Mesh( geometry, material );
     cube.name = "cube";
-    cube.callback = function(){
-
-    };
-    this.scene.add(cube);
+    this.scene.add( cube );
 
     this.setState({
       isCubeShowing: true,

@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "sample-expo-ar",
+    "name": "expo-crazy-cubes",
     "description": "This project is really great.",
-    "slug": "sample-expo-ar",
+    "slug": "expo-crazy-cubes",
     "privacy": "public",
     "sdkVersion": "29.0.0",
     "platforms": ["ios", "android"],
@@ -20,6 +20,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "packagerOpts": {
+      "assetExts": ["ttf", "mp4", "obj", "mtl"]
+    },
     "ios": {
       "supportsTablet": true
     }
