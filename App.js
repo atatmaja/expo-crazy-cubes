@@ -101,7 +101,7 @@ export default class App extends React.Component {
       const {height, width} = Dimensions.get('window');
 
       mouse.x = 2*(event.nativeEvent.locationX/width) - 1;
-      mouse.y = 2*(event.nativeEvent.locationY/height) - 1;
+      mouse.y = 2*(event.nativeEvent.locationY/500) - 1;
 
       raycaster.setFromCamera(mouse, this.camera);
       const intersects = raycaster.intersectObjects(this.scene.children);
